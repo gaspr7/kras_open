@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Zemljevid</title>
+
+
+  <link rel="stylesheet" href="styles/zemljevid.css">
+  <link rel="stylesheet" href="styles/vaja3.css">
+  <link rel="stylesheet" href="styles/general.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    
+</head>
+
+<body>
+
+ <!--navbar-->
+ <nav class="navbar navbar-expand-lg bg-dark navbar-dark w-100" style="z-index: 100;">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand">
+      <img src="images/kras-open-logo-belo2.png" alt="" width="60">
+  </a>
+  
+  <a href="kras-open.html" class="nav-item text-decoration-none">KRAS OPEN</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a href="kras-open.html" class="nav-link">Domov</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="o_nas.html" class="nav-link">O nas</a>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a href="rezultati.html" class="nav-link">Rezultati</a>
+        </li> -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Turnirji
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="2020.html" class="dropdown-item">2020</a></li>
+            <!-- <li><a href="2021.html" class="dropdown-item">2021</a></li>
+            <li><a href="2022.html" class="dropdown-item">2022</a></li>
+            <li><a href="2023.html" class="dropdown-item">2023</a></li>
+            <li><a href="2024.html" class="dropdown-item">2024</a></li> -->
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="zmagovalci.html" class="nav-link">Zmagovalci</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="zemljevid.html" class="nav-link">Lokacije</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a href="kontakt.html" class="nav-link">Kontakt</a>
+        </li> -->
+
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+  <div class="container-fluid py-5">
+    <h1 class="naslov-strani" style="color: rgb(128, 0, 32);">Lokacije</h1>
+  </div>
+
+
+  <div class="d-flex justify-content-center flex-wrap px-5 my-4 button-container">
+    <button class="go-button" onclick="scrollToImage('image1')">Pliskovica</button>
+    <button class="go-button" onclick="scrollToImage('image2')">Pliskovica (2-stezno)</button>
+    <button class="go-button" onclick="scrollToImage('image3')">Tupelče</button>
+    <button class="go-button" onclick="scrollToImage('image4')">Sežana</button>
+    <button class="go-button" onclick="scrollToImage('image5')">Gorjansko</button>
+    <button class="go-button" onclick="scrollToImage('image6')">Povir</button>
+    <button class="go-button" onclick="scrollToImage('image7')">Dol pri Vogljah</button>
+    <button class="go-button" onclick="scrollToImage('text1')">Rezervna igrišča</button>
+</div>
+
+  <div class="container my-5">
+
+    <div class="row mb-4">
+      <div class="col col-lg-6 col-md-6 col-12 mb-4 lokacija rounded">
+        <p class="text-center pt-3 flextext">Pliskovica</p>
+        <div class="d-flex justify-content-center">
+          <img class="zemljevid-slika rounded" id="image1" src="images/lokacije/pliskovica.jpg">
+        </div>
+        <div class="flex-link">
+          
+          <a href="https://www.google.com/maps/place/45%C2%B046'25.2%22N+13%C2%B046'46.6%22E/@45.7736667,13.7796111,362m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d45.7736667!4d13.7796111?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D"
+            class="lokacija-link" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+
+        </div>
+      </div>
+      
+      <div class="col col-lg-6 col-md-6 col-12 mb-4 lokacija rounded">
+        <p class="text-center pt-3 flextext">Pliskovica - 2-stezno</p>
+        <div class="d-flex justify-content-center">
+          <img class="zemljevid-slika rounded" id="image2" src="images/lokacije/pliskovica-2.jpg">
+        </div>
+        <div class="flex-link">
+          <a href="https://www.google.com/maps/place/45%C2%B046'24.7%22N+13%C2%B046'49.0%22E/@45.773151,13.7800833,19.5z/data=!4m4!3m3!8m2!3d45.773515!4d13.780272?entry=ttu"
+            class="lokacija-link" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mb-4">
+      <div class="col col-lg-6 col-md-6 col-12 mb-4 lokacija rounded">
+        <p class="text-center pt-3 flextext">Tupelče</p>
+        <div class="d-flex justify-content-center">
+          <img class="zemljevid-slika rounded" id="image3" src="images/lokacije/tupelce.jpg">
+        </div>
+        <div class="flex-link">
+          <a href="https://www.google.com/maps/place/45%C2%B048'47.2%22N+13%C2%B048'49.4%22E/@45.813112,13.8130649,187m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d45.813112!4d13.81371?entry=ttu"
+            class="lokacija-link" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+
+        </div>
+      </div>
+      <div class="col col-lg-6 col-md-6 col-12 mb-4 lokacija rounded">
+        <p class="text-center pt-3 flextext">Sežana</p>
+        <div class="d-flex justify-content-center">
+          <img class="zemljevid-slika rounded" id="image4" src="images/lokacije/sezana.jpg">
+        </div>
+        <div class="flex-link">
+          <a href="https://www.google.com/maps/place/Balinarska+dvorana+Darka+Gu%C5%A1tina/@45.7048035,13.8684966,181m/data=!3m1!1e3!4m6!3m5!1s0x477b15cc3f790ef1:0x551c16e3498d7b69!8m2!3d45.7047979!4d13.8686467!16s%2Fg%2F11rsc_yn8g?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D"
+            class="lokacija-link" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col col-lg-6 col-md-6 col-12 mb-4 lokacija rounded">
+        <p class="text-center pt-3 flextext">Gorjansko</p>
+        <div class="d-flex justify-content-center">
+          <img class="zemljevid-slika rounded" id="image5" src="images/lokacije/gorjansko.jpg">
+        </div>
+        <div class="flex-link">
+          <a href="https://www.google.com/maps/place/45%C2%B048'09.4%22N+13%C2%B042'43.1%22E/@45.802608,13.7113289,187m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d45.802608!4d13.711974?entry=ttu"
+            class="lokacija-link" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+
+        </div>
+      </div>
+      <div class="col col-lg-6 col-md-6 col-12 mb-4 lokacija rounded">
+        <p class="text-center pt-3 flextext">Povir</p>
+        <div class="d-flex justify-content-center">
+          <img class="zemljevid-slika rounded" id="image6" src="images/lokacije/povir.jpg">
+        </div>
+        <div class="flex-link">
+          <a href="https://www.google.com/maps/place/45%C2%B042'00.0%22N+13%C2%B055'54.1%22E/@45.7,13.9316944,362m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d45.7!4d13.9316944?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D"
+            class="lokacija-link" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="d-flex justify-content-center">
+        <div class="col col-lg-6 col-md-6 col-12 mb-4 lokacija rounded">
+          <p class="text-center pt-3 flextext">Dol pri Vogljah</p>
+          <div class="d-flex justify-content-center">
+            <img class="zemljevid-slika rounded" id="image7" src="images/lokacije/dol-pri-vogljah.jpeg">
+          </div>
+          <div class="flex-link">
+            <a href="https://www.google.com/maps/place/45%C2%B043'29.7%22N+13%C2%B048'55.3%22E/@45.724915,13.8147099,187m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d45.724915!4d13.815355?entry=ttu"
+              class="lokacija-link" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <h1 id="text1" class="text-uppercase text-center mb-5 mt-5" style="color: rgb(128, 0, 32);">Rezervna igrišča</h1>
+
+      <div class="row mb-4">
+        <div class="col col-lg-6 col-md-6 col-12 mb-4 lokacija rounded">
+          <p class="text-center pt-3 flextext">Cesta</p>
+          <div class="d-flex justify-content-center">
+            <img class="zemljevid-slika rounded" id="image8" src="images/rezervne_lokacije/cesta.jpg">
+          </div>
+          <div class="flex-link">
+            <a href="https://www.google.com/maps/place/45%C2%B053'12.8%22N+13%C2%B051'44.2%22E/@45.886878,13.8616289,186m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d45.886878!4d13.862274?entry=ttu"
+              class="lokacija-link" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+
+          </div>
+        </div>
+        <div class="col col-lg-6 col-md-6 col-12 mb-4 lokacija rounded">
+          <p class="text-center pt-3 flextext">Obrov</p>
+          <div class="d-flex justify-content-center">
+            <img class="zemljevid-slika rounded" id="image2" src="images/rezervne_lokacije/obrov.jpg">
+          </div>
+          <div class="flex-link">
+            <a href="https://www.google.com/maps/place/45%C2%B032'28.1%22N+14%C2%B005'10.1%22E/@45.541148,14.0854829,188m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d45.541148!4d14.086128?entry=ttu"
+              class="lokacija-link" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mb-4">
+        <div class="col col-lg-6 col-md-6 col-12 mb-4 lokacija rounded">
+          <p class="text-center pt-3 flextext">Kobjeglava</p>
+          <div class="d-flex justify-content-center">
+            <img class="zemljevid-slika rounded" id="image1" src="images/rezervne_lokacije/kobjeglava.jpg">
+          </div>
+          <div class="flex-link">
+            <a href="https://www.google.com/maps/place/Balinarski+klub+Hrast+Kobjeglava-Tupel%C4%8De/@45.8141786,13.8108898,157m/data=!3m1!1e3!4m6!3m5!1s0x477b10bf2076221d:0xc99c4bcb64def840!8m2!3d45.813994!4d13.810904!16s%2Fg%2F1hc2_qrbx?entry=ttu"
+              class="lokacija-link" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+
+          </div>
+        </div>
+        <div class="col col-lg-6 col-md-6 col-12 mb-4 lokacija rounded">
+          <p class="text-center pt-3 flextext">Postojna</p>
+          <div class="d-flex justify-content-center">
+            <img class="zemljevid-slika rounded" id="image2" src="images/rezervne_lokacije/postojna.jpg">
+          </div>
+          <div class="flex-link">
+            <a href="https://www.google.com/maps/place/Zelena+Balinarska+dvorana+Postojna/@45.7730922,14.21428,96m/data=!3m1!1e3!4m6!3m5!1s0x477b310bdc5bdf51:0x94c42f6589dadd52!8m2!3d45.7732402!4d14.2142213!16s%2Fg%2F11ns4b754j?entry=ttu"
+              class="lokacija-link" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mb-4">
+        <div class="d-flex justify-content-center">
+          <div class="col col-lg-6 col-md-6 col-12 mb-4 lokacija rounded">
+            <p class="text-center pt-3 flextext">Planina nad Ajdovščino</p>
+            <div class="d-flex justify-content-center">
+              <img class="zemljevid-slika rounded" id="image1" src="images/rezervne_lokacije/planina.jpg">
+            </div>
+            <div class="flex-link">
+              <a href="https://www.google.com/maps/place/45%C2%B051'23.9%22N+13%C2%B054'07.6%22E/@45.856624,13.9014559,187m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d45.856624!4d13.902101?entry=ttu"
+                class="lokacija-link" target="_blank"><i class="bi bi-geo-alt-fill"></i> Google Maps</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     </div>
+  
+
+      <!--footer-->
+      <footer class="bg-dark text-white text-lg-center text-white">
+        <div class="container p-4">
+
+          <div class="row my-4 mt-5">
+            <div class="col-lg-4 mb-4 col-md-4 col-sm-12 pt-5">
+              <div class="d-flex align-items-center justify-content-center mb-4 mx-auto"
+                style="width: 150px; height: 150px;">
+                <img src="images/kras-open-logo-belo2.png" height="300" alt="" loading="lazy">
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4 col-md-4 col-sm-12 text-center pt-5 footer-links">
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="vaja3.html" class="text-white">Domov</a>
+                </li>
+                <li class="mb-2">
+                  <a href="o_nas.html" class="text-white">O nas</a>
+                </li>
+                <li class="mb-2">
+                  <a href="rezultati.html" class="text-white"></i>Rezultati</a>
+                </li>
+                <li class="mb-2">
+                  <a href="zmagovalci.html" class="text-white">Zmagovalci</a>
+                </li>
+                <li class="mb-2">
+                  <a href="zemljevid.html" class="text-white"></i>Lokacije</a>
+                </li>
+                <li class="mb-2">
+                  <a href="kontakt.html" class="text-white">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 mb-4 col-md-4 col-sm-12 text-center pt-5">
+              <h5 class="text-uppercase mb-4">Kontakt</h5>
+              <p>E-mail: kras.open@gmail.com</p>
+              <p>Telefon: 022 222 222</p>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+
+
+</body>
+
+<script src="js/nevem.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>

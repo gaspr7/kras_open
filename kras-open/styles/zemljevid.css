@@ -1,0 +1,81 @@
+p {
+    font-family: "";
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.zemljevid-slika {
+    
+    width: 90%; 
+    height: 350px;
+    left: 50%;
+    top: 50%;
+    
+    
+}
+
+.go-button {
+    font-family: 'Roboto';
+    border-width: 3px;
+    background-color: rgb(128, 0, 32);
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(128, 0, 32);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
+    padding: 7px 15px;
+    
+}
+
+.go-button:hover {
+    color: rgb(128, 0, 32);
+    background-color: white;
+}
+
+
+
+.flex-link {
+
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.lokacija-link {
+
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    text-decoration: none;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    color: black;
+    border-radius: 25px;
+
+}
+
+.lokacija {
+
+    box-shadow: 0 2px 15px rgba(31, 30, 30, 0.4);
+}
+
+.flextext {
+    font-size: 17px;
+}
+
+
+.button-container {
+    gap: 15px; /* Enakomeren razmik med gumbi */
+}
+
+

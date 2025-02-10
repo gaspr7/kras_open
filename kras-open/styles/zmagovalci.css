@@ -1,0 +1,24 @@
+
+
+
+.kartica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(198, 82, 96, 0.5);
+    max-width: 100%;
+    width: 400px;
+    
+   
+}
+
+.kartica p {
+    margin: 5px 0;
+    text-align: center;
+    display: block;
+}
+

@@ -1,0 +1,65 @@
+.footer {
+    background-color: black;
+    padding: 50px 150px;
+    font-family: 'Poppins';
+    margin-top: 150px;
+
+}
+
+.container {
+    margin: auto;
+    line-height: 1.8;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer-column {
+   
+    width: 33,3%;
+    padding: 0 15px;
+    color: white;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-column ul li a {
+
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+
+}
+
+.footer-column ul li a:hover {
+
+    color: #ffff;
+    padding-left: 10px;
+}
+
+.footer-column-slika {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer-column-slika-image {
+    width: 300px;
+}

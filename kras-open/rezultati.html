@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nas</title>
+
+
+    <link rel="stylesheet" href="styles/vaja3.css">
+    <link rel="stylesheet" href="styles/rezultati.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    
+</head> 
+<body>
+
+  <header>
+
+        
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark w-100" style="z-index: 100;">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand">
+      <img src="images/kras-open-logo-belo2.png" alt="" width="60">
+  </a>
+  
+  <a href="vaja3.html" class="nav-item text-decoration-none">KRAS OPEN</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a href="vaja3.html" class="nav-link">Domov</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="o_nas.html" class="nav-link">O nas</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="rezultati.html" class="nav-link">Rezultati</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Turnirji
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="2020.html" class="dropdown-item">2020</a></li>
+            <li><a href="2021.html" class="dropdown-item">2021</a></li>
+            <li><a href="2022.html" class="dropdown-item">2022</a></li>
+            <li><a href="2023.html" class="dropdown-item">2023</a></li>
+            <li><a href="2024.html" class="dropdown-item">2024</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="zmagovalci.html" class="nav-link">Zmagovalci</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="zemljevid.html" class="nav-link">Lokacije</a>
+        </li>
+        <li class="nav-item">
+          <a href="kontakt.html" class="nav-link">Kontakt</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+
+
+
+  <div class="container-fluid" style="padding-top: 130px;">
+    <h1 class="text-uppercase text-center py-5" style="color: rgb(128, 0, 32);;">Rezultati kras open 2025</h1>
+    </div>
+
+        <div class="rezultati-link-buttons">
+          <button class="rezultati-zgornji-button">Skupinski del</button>
+          <button class="rezultati-zgornji-button">1/16</button>
+          <button class="rezultati-zgornji-button">1/8</button>
+          <button class="rezultati-zgornji-button">1/4</button>
+          <button class="rezultati-zgornji-button">1/2</button>
+          <button class="rezultati-zgornji-button">Finale</button>
+        </div>
+
+        
+
+        <div class="container pt-5">
+          
+
+        <div class="row">
+
+          <div class="col-md-6 col-12 table-container">
+            <h3>Skupina 1</h3>
+
+            <form id="resultForm">
+              <table class="table table-bordered table-striped" style="max-width: 600px;">
+                <thead>
+                  <tr>
+                    <th>Ura</th>
+                    <th>Igrišče</th>
+                    <th class="text-center">Ekipa 1</th>
+                    <th class="text-center">Rezultat</th>
+                    <th class="text-center">Ekipa 2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10.00</td>
+                    <td class="text-center">1</td>
+                    <td id="ekipa1">Štoka Zdauc</td>
+                    <td class="text-center"><input type="number" id="resultA1_team1"> <input type="number" id="resultA1_team2"></td>
+                    <td  id="ekipa2">Sosič Švara</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    <td>10.00</td>
+                    <td class="text-center">1</td>
+                    <td  id="ekipa3">Janžič Tonejc</td>
+                    <td class="text-center"><input type="number" name="resultA2_team3" name="resultA1_team1" id="resultA2_team3"> <input type="number" name="resultA2_team4" name="resultA1_team2" id="resultA2_team4"></td>
+                    <td  id="ekipa4">Kozjek Oprešnik</td>
+                    
+                  </tr>
+            
+                  <tr>
+                    <td>10.00</td>
+                    <td class="text-center">1</td>
+                    <td id="winner1"></td>
+                    <td class="text-center"><input type="text" id="resultWinner1"> <input type="text" id="resultWinner2"></td>
+                    <td id="winner2"></td>
+                    
+                  </tr>
+            
+                  <tr>
+                    <td>10.00</td>
+                    <td class="text-center">1</td>
+                    <td id="loser1"></td>
+                    <td class="text-center"><input type="text" id="resultLoser1"> <input type="text" id="resultLoser2"></td>
+                    <td id="loser2"></td>
+                    
+                  </tr>
+            
+                  <tr>
+                    <td>10.00</td>
+                    <td class="text-center">1</td>
+                    <td></td>
+                    <td class="text-center"><input type="text" id="result1_team1"> <input type="text" id="result1_team2"></td>
+                    <td></td>
+                    
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </form>
+
+            <button type="submit">Shrani Rezultat</button>
+            
+            
+          </div>
+
+          <div class="col-md-6 col-12 table-container">
+            <h3>Skupina 1</h3>
+            <table class="table table-bordered table-striped" style="max-width: 600px;">
+              <thead>
+                <tr>
+                  <th class="text-center">Ura</th>
+                  <th class="text-center">Igrišče</th>
+                  <th class="text-center">Ekipa 1</th>
+                  <th class="text-center">Rezultat</th>
+                  <th class="text-center">Ekipa 2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10.00</td>
+                  <td class="text-center">1</td>
+                  <td>Sosič Švara</td>
+                  <td class="text-center"><input type="text" id="result1_team1"> <input type="text" id="result1_team2"></td>
+                  <td>Sosič Švara</td>
+                  
+                </tr>
+                
+                <tr>
+                  <td>10.00</td>
+                  <td class="text-center">1</td>
+                  <td>Sosič Švara</td>
+                  <td class="text-center"><input type="text" id="result1_team1"> <input type="text" id="result1_team2"></td>
+                  <td>Sosič Švara</td>
+                  
+                </tr>
+          
+                <tr>
+                  <td>10.00</td>
+                  <td class="text-center">1</td>
+                  <td>Sosič Švara</td>
+                  <td class="text-center"><input type="text" id="result1_team1"> <input type="text" id="result1_team2"></td>
+                  <td>Sosič Švara</td>
+                  
+                </tr>
+          
+                <tr>
+                  <td>10.00</td>
+                  <td class="text-center">1</td>
+                  <td>Sosič Švara</td>
+                  <td class="text-center"><input type="text" id="result1_team1"> <input type="text" id="result1_team2"></td>
+                  <td>Sosič Švara</td>
+                  
+                </tr>
+          
+                <tr>
+                  <td>10.00</td>
+                  <td class="text-center">1</td>
+                  <td>Sosič Švara</td>
+                  <td class="text-center"><input type="text" id="result1_team1"> <input type="text" id="result1_team2"></td>
+                  <td>Sosič Švara</td>
+                  
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        
+
+        
+
+       
+        </div>
+
+
+  <!--footer-->
+
+  <footer class="bg-dark text-white text-lg-center text-white">
+    <div class="container p-4">
+
+      <div class="row my-4 mt-5">
+        <div class="col-lg-4 mb-4 col-md-4 col-sm-12 pt-5">
+          <div class="d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+            <img src="images/kras-open-logo-belo2.png" height="300" alt=""
+            loading="lazy">
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 col-md-4 col-sm-12 text-center pt-5 footer-links">
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="vaja3.html" class="text-white">Domov</a>
+            </li>
+            <li class="mb-2">
+              <a href="o_nas.html" class="text-white">O nas</a>
+            </li>
+            <li class="mb-2">
+              <a href="rezultati.html" class="text-white"></i>Rezultati</a>
+            </li>
+            <li class="mb-2">
+              <a href="zmagovalci.html" class="text-white">Zmagovalci</a>
+            </li>
+            <li class="mb-2">
+              <a href="zemljevid.html" class="text-white"></i>Lokacije</a>
+            </li>
+            <li class="mb-2">
+              <a href="kontakt.html" class="text-white">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 mb-4 col-md-4 col-sm-12 text-center pt-5">
+          <h5 class="text-uppercase mb-4">Kontakt</h5>
+          <p>E-mail: kras.open@gmail.com</p>
+          <p>Telefon: 022 222 222</p>
+        </div>
+       
+      </div>
+    </div>
+  </footer>
+
+  
+<!-- Bootstrap JS with Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-sC0hfa6UcRfFMIuPymeKJFdK/4Vd/tCxGwQ2eS38Vqz6AK0ve8HJz7ckHfAY+bI" crossorigin="anonymous"></script>
+
+    <script>
+
+function shraniRezultat() {
+    const resultA1 = parseInt(document.getElementById('resultA1').value);
+    const resultA2 = parseInt(document.getElementById('resultA2').value);
+    const resultA3 = parseInt(document.getElementById('resultA3').value);
+    const resultA4 = parseInt(document.getElementById('resultA4').value);
+
+    // Določite ekipe tukaj
+    const team1 = document.getElementById('ekipa1').innerText;
+    const team2 = document.getElementById('ekipa2').innerText;
+    const team3 = document.getElementById('ekipa3').innerText;
+    const team4 = document.getElementById('ekipa4').innerText;
+
+    if (!isNaN(resultA1) && !isNaN(resultA2) && !isNaN(resultA3) && !isNaN(resultA4)) {
+        // Določi zmagovalce in poražence za prvo tekmo
+        const winner1 = resultA1 > resultA2 ? team1 : team2;
+        const loser1 = resultA1 < resultA2 ? team1 : team2;
+
+        // Določi zmagovalce in poražence za drugo tekmo
+        const winner2 = resultA3 > resultA4 ? team3 : team4;
+        const loser2 = resultA3 < resultA4 ? team3 : team4;
+
+        // Prikaže rezultate v input poljih
+        document.getElementById('winner1').value = winner1;
+        document.getElementById('winner2').value = winner2;
+        document.getElementById('loser1').value = loser1;
+        document.getElementById('loser2').value = loser2;
+    }
+}
+
+
+    </script>
+</body>
+</html>

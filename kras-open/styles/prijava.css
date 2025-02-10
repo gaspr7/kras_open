@@ -1,0 +1,36 @@
+.prijavni_obrazec {
+    background-color: antiquewhite;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+}
+
+
+form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+form .input-box input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #ddd;
+    margin-top: 8px;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+}
+
+.button-poslji {
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    max-width: 634px;
+    height: 50px;
+    border-radius: 5px;
+
+}
