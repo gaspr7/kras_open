@@ -1,0 +1,180 @@
+
+
+.navbar .nav-link {
+    color: #ffffff !important;
+}
+.nav-item {
+
+    font-size: 17px;
+    padding-right: 20px;
+    color: white;
+    position: relative;
+
+}
+
+.nav-link {
+    color: white;
+    position: relative;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .5s;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.zacetna-slika-prijavi-button{
+    padding: 10px 25px;
+    margin-right: 20px;
+    z-index: 2; 
+    position: relative; 
+    border: none;
+    color: rgb(128, 0, 32);
+    font-size: 18px;
+    border-radius: 25px;
+    transition-duration: 0.7s;
+}
+
+.zacetna-slika-prijavi-button:hover{
+
+    transition: 0.6s;
+    background-color: rgb(128, 0, 32);
+    color: white;
+    
+}
+
+.zacetna-slika-info-button {
+    padding: 10px 25px;
+    z-index: 2; 
+    position: relative; 
+    border: none;
+    background-color: rgb(128, 0, 32);
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    transition-duration: 0.7s;
+    font-family: "Poppins", serif;
+
+}
+
+.zacetna-slika-info-button:hover{
+
+    opacity: 0.7;
+    
+}
+
+
+
+.btnn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer-links ul li a {
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+
+    padding-left: 20px;
+
+}
+
+.pt-7 {
+    padding-top: 7rem;
+}
+
+.pt-6 {
+    padding-top: 5rem;
+}
+
+.px-8 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.bg-image {
+    position: relative; /* Required for absolute positioning of the overlay */
+    height: 700px;
+    max-width: 100%;
+    background-image: url('/images/prva3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+  }
+  
+  .bg-image::after {
+    content: '';
+    position: absolute; /* Positioning the overlay */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay color with opacity */
+    z-index: 1; /* Ensure overlay is above the background image */
+  }
+
+  
+  .start-text {
+    color: white;
+    font-weight: 600;
+    z-index: 2; /* Ensure text stays above the overlay */
+    position: relative; /* Position it above the overlay */
+}
+
+.start-button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition-duration: 0.7s;
+}
+
+.start-button:hover {
+    opacity: 0.8;
+}
+
+.zacetna-podnaslov {
+    color: rgb(128, 0, 32);
+    font-weight: bold;
+}
+  
+.background-gradient {
+    position: relative;
+    background: linear-gradient(to bottom right, rgb(243, 241, 239) 20%, rgb(232, 219, 197) 100%);
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.gradient-left {
+    position: relative;
+    background: linear-gradient(to bottom left, rgba(243, 241, 239, 1) 20%, rgb(232, 219, 197) 100%);
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.event {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

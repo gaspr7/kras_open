@@ -1,0 +1,38 @@
+.sponzor-naslov {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sponzor-naslov-tekst {
+    font-size: 40px;
+}
+
+
+.grid {
+    margin-left: 120px;
+    margin-right: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 170px 170px 170px;
+    gap: 20px;
+}
+
+.blue {
+    background-color: aqua;
+
+}
+
+.green {
+    background-color: aquamarine;
+}
+
+.sponzor-slika {
+    width: 70%;
+    height: 100%;
+    display: block;
+    margin: auto;
+
+    
+}
+
